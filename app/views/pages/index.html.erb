@@ -1,1 +1,5 @@
-  <%= react_component('CommentBox', {:presenter => @presenter.to_json}) %>
+<div class="container">
+<h3>React</h3>
+<hr>
+  <%= react_component('CommentBox', {:presenter => @presenter.to_json}, {:prerender => true}) %>
+</div>
